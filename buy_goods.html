@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>采买管理-已买到的商品</title>
+    <link href="Content/style.css" rel="stylesheet"/>
+    
+	<link href="Content/back.css" rel="stylesheet"/>
+</head>
+<body>
+	<!--
+    	headerstart
+    -->
+<header>
+        <div class="head-container">
+            <div class="site-title">我要开店</div>
+            <nav>
+                <ul id="menu">
+                    <li><a href="/home/index">首页</a></li>
+                    <li><a href="/home/index">团购</a></li>
+                    <li><a href="/home/index">开店帮</a></li>
+                    <li><a href="/home/index">品牌街</a></li>
+                </ul>
+            </nav>
+
+            <div class="site-account">
+                <a href="/login">登录</a>
+                <a>|</a>
+                <a href="/regiseter">注册</a>
+            </div>
+            <div class="site-search">
+                <input type="text" class="site-search-input" placeholder="请输入关键字（小区名、楼盘名等您要查询的地理位置）..." name="txtKeys" />
+                <input type="button" class="site-search-btn btn" value="搜索" />
+            </div>
+        </div>
+    </header>
+<div class="clear"></div> 
+<!--
+    	headerend
+    -->    
+
+<div class="brand-warp">
+        <div class="utc">
+            <div class="uct_left">
+                <div class="utc_nav">
+                    <div class="utc_title">会员中心</div>
+                    <ul class="utc_nav_ul">
+                        <li class="blod" style="font-size: 16px;background: #f9f9f9;border-top: 1px solid #ccc;border-left:2px solid #d72315;"><a href="#">会员首页 </a></li>
+                        <li><a href="#">我的账户 </a></li>
+                        <li><a href="#">我的任务 </a></li>
+                        <li><a href="#">我的订单 </a></li>
+                        <li>我的消息 </a></li>
+                        <li><a href="#">项目团购 </a></li>
+                        <li><a href="#"><a href="#">品牌加盟 </a></li>
+                        <li class="blod" style="font-size: 16px;background: #f9f9f9;"><a href="#">采买管理 </a></li>
+                        <li><a href="#">已买到商品 </a></li>
+                        <li><a href="#">消费统计 </a></li>
+                        <li><a href="#">历史价格 </a></li>
+                        <li><a href="#">我的投诉 </a></li>
+                        <li class="blod" style="font-size: 16px;background: #f9f9f9;"><a href="#">资料管理 </a></li>
+                        <li><a href="#">会员资料 </a></li>
+                        <li><a href="#">修改密码 </a></li>
+                        <li><a href="#">升级品牌用户 </a></li>
+                        <li class="blod" style="font-size: 16px;background: #f9f9f9;"><a href="#">资料管理 </a></li>
+                        <li><a href="#">品牌资料 </a></li>
+                        <li><a href="#">品牌图库 </a></li>
+                        <li><a href="#">资质信息 </a></li>
+                        <li style="border-left:2px solid #d72315;background: #f9f9f9;"><a href="#">加盟申请 </a></li>
+                        <li><a href="#">修改密码 </a></li>
+                    </ul>
+                     
+                </div>
+            </div>
+            <!-- 右侧已买到的商品 -->
+            <div class="utc_right">
+                <div class="utc_right_title_line">
+                    <div class="utc_right_title Gray18B">已买到的商品</div>
+                </div>
+                
+                <div class="clear"></div>
+                <div class="utc_right_uc">                 
+                    <div class="utc_right_order_center">
+
+                        <!-- 已买商品导航目录开始 -->
+                        <div class="buy_nav">
+                            <ul>
+                                <li><a class="red" href="">所有商品</a></li>
+                                <li><a href="">待付款</a></li>                                
+                                <li><a href="">待收货</a></li>                                
+                                <li><a href="">待评价</a></li>                                
+                            </ul>
+                            <div>
+                                <button type="button">搜索</button>
+                                <input type="text" value="商品名称/商家名称">
+                            </div>
+                        </div>                      
+                        <!-- 已买商品导航目录结束 -->
+
+                        <!-- 商品信息列表导航开始 -->
+                        <ul class="buy_lis">
+                            <li class="buy_list1">商品</li>
+                            <li class="buy_list2">单价(元)</li>
+                            <li class="buy_list3">数量</li>
+                            <li class="buy_list4">实付款(元)</li>
+                            <li class="buy_list5">状态</li>
+                            <li class="buy_list6">操作</li>
+                        </ul>
+                        <!-- 商品信息列表导航结束 -->
+                        <!-- 商品信息详情开始 -->
+                        <div class="buy_details">
+                            <ul class="buy_details_1">
+                                <li class="del_1"></li>                                
+                                <li class="del_2">2011-1-11</li>                                
+                                <li class="del_3">订单号：SP1000921</li>                                
+                                <li class="del_4">文创园商家</li>                                
+                            </ul>
+                            <!-- 商品 -->
+                            <div class="goods">
+                                <ul>
+                                    <li class="goods_name">
+                                        <img src="images/buy_yangmei.jpg" alt="杨梅">
+                                        <strong>杨梅</strong>
+                                        <span>
+                                            杨梅大促销！！旺季促销！！杨梅大促销！！旺季促销！
+                                        </span>
+
+
+                                    </li>
+                                    <li class="goods_prace">36.0</li>
+                                    <li class="goods_num">1</li>
+                                    <li class="goods_money">36.0</li>
+                                    <li class="goods_State">
+                                        <strong>交易成功</strong>
+                                        <span>订单详情</span>
+                                    </li>
+                                    <li class="goods_Operation">
+                                        <strong>付款</strong>
+                                        <span>评价</span>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <div class="goods">
+                                <ul>
+                                    <li class="goods_name">
+                                        <img src="images/buy_yangmei.jpg" alt="杨梅">
+                                        <strong>杨梅</strong>
+                                        <span>
+                                            杨梅大促销！！旺季促销！！杨梅大促销！！旺季促销！
+                                        </span>
+
+
+                                    </li>
+                                    <li class="goods_prace">36.0</li>
+                                    <li class="goods_num">1</li>
+                                    <li class="goods_money">36.0</li>
+                                    <li class="goods_State">
+                                        <strong>交易成功</strong>
+                                        <span>订单详情</span>
+                                    </li>
+                                    <li class="goods_Operation">
+                                        <strong>付款</strong>
+                                        <span>评价</span>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                                                        
+                            <div class="goods">
+                                <ul>
+                                    <li class="goods_name">
+                                        <img src="images/buy_yangmei.jpg" alt="杨梅">
+                                        <strong>杨梅</strong>
+                                        <span>
+                                            杨梅大促销！！旺季促销！！杨梅大促销！！旺季促销！
+                                        </span>
+
+
+                                    </li>
+                                    <li class="goods_prace">36.0</li>
+                                    <li class="goods_num">1</li>
+                                    <li class="goods_money">36.0</li>
+                                    <li class="goods_State">
+                                        <strong>交易成功</strong>
+                                        <span>订单详情</span>
+                                    </li>
+                                    <li class="goods_Operation">
+                                        <strong>付款</strong>
+                                        <span>评价</span>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="buy_details">
+                            <ul class="buy_details_1">
+                                <li class="del_1"></li>                                
+                                <li class="del_2">2011-1-11</li>                                
+                                <li class="del_3">订单号：SP1000921</li>                                
+                                <li class="del_4">文创园商家</li>                                
+                            </ul>
+                            <!-- 商品 -->
+                            <div class="goods">
+                                <ul>
+                                    <li class="goods_name">
+                                        <img src="images/buy_yangmei.jpg" alt="杨梅">
+                                        <strong>杨梅</strong>
+                                        <span>
+                                            杨梅大促销！！旺季促销！！杨梅大促销！！旺季促销！
+                                        </span>
+
+
+                                    </li>
+                                    <li class="goods_prace">36.0</li>
+                                    <li class="goods_num">1</li>
+                                    <li class="goods_money">36.0</li>
+                                    <li class="goods_State">
+                                        <strong>交易成功</strong>
+                                        <span>订单详情</span>
+                                    </li>
+                                    <li class="goods_Operation">
+                                        <strong>付款</strong>
+                                        <span>评价</span>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            
+                                                        
+                            <div class="goods">
+                                <ul>
+                                    <li class="goods_name">
+                                        <img src="images/buy_yangmei.jpg" alt="杨梅">
+                                        <strong>杨梅</strong>
+                                        <span>
+                                            杨梅大促销！！旺季促销！！杨梅大促销！！旺季促销！
+                                        </span>
+
+
+                                    </li>
+                                    <li class="goods_prace">36.0</li>
+                                    <li class="goods_num">1</li>
+                                    <li class="goods_money">36.0</li>
+                                    <li class="goods_State">
+                                        <strong>交易成功</strong>
+                                        <span>订单详情</span>
+                                    </li>
+                                    <li class="goods_Operation">
+                                        <strong>付款</strong>
+                                        <span>评价</span>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    	<!-- 商品信息详情结束 -->                   	
+                    
+                    </div>
+
+                    <!-- 记录和翻页 -->
+                    <div>
+                        <div class="utc_right_order_bottom_left Gray14">
+                        	共<span class="red">2</span>条任务记录
+                        </div>
+    					<div class="utc_right_order_bottom_right Gray14">
+                        	<span class="utc_right_order_bottom_right_span"><a href=""><<</a></span>
+                            <span class="utc_right_order_bottom_right_span redqian"><a href="">1</a></span>
+                            <span class="utc_right_order_bottom_right_span"><a href="">2</a></span>
+                            <span class="utc_right_order_bottom_right_span"><a href="">3</a></span>
+                            <span class="utc_right_order_bottom_right_span"><a href="">4</a></span>
+                            <span class="utc_right_order_bottom_right_span"><a href="">5</a></span>
+                        	<span class="utc_right_order_bottom_right_span"><a href="">...</a></span>
+                        	<span class="utc_right_order_bottom_right_span"><a href="">>></a></span>
+                        </div>
+                    </div>
+                    <!-- /记录和翻页 -->
+                    
+                </div>
+                <div class="clear"></div>
+				
+               
+            </div>
+
+        </div>
+    </div>
+
+    
+    
+    
+    
+ 
+<!-- foooterstart -->
+<div class="clear"></div>    
+<div class="footer">
+        <div class="warp-line">
+        <div class="service">
+            <div class="inner">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <h3>开店服务</h3>
+                        </li>
+                        <li><a href="#/instruction">购买指南</a></li>
+                        <li><a href="#/payment">支付方式</a></li>
+                        <li><a href="#/delivery">送货政策</a></li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>服务与支持</h3>
+                        </li>
+                        <li><a href="#/service">购买指南</a></li>
+                        <li><a href="#/storelist">支付方式</a></li>
+                        <li><a target="_blank" href="http://preorder.smartisan.com/#/mobile/code">优先购买通道</a>  </li>
+                    </ul>
+                    <ul >
+                        <li>
+                            <h3>关于公司</h3>
+                        </li>
+                        <li><a href="#/about">公司简介</a></li>
+                        <li><a href="#/join">加入我们</a></li>
+                        <li><a href="#/contact">联系我们</a></li>
+                    </ul> 
+                </div>
+                
+                <div class="doublebox">
+                                <div class="doublebox_in">
+                                    <img src="/Images/s-android.jpg" />
+                                    <p>Android二维码</p>
+                                </div>
+                            </div>
+                <div class="online">
+                    <p class="phone-title">客服电话</p>
+                    <p class="tel"><a href="tel:4006190909">400-000-9999</a></p>
+                    <p>周一至周日 9:00-18:0</p>
+                </div>
+            </div>
+        </div>
+        
+            </div>
+        <div class="copyright">
+            <div class="warp-line fn-clear">
+                <div class="copy-label">
+                    <div class="copy-text">
+                        Copyright &copy; 2015, KaiDian Co.., Ltd. All Rights Reserved. 北京开店帮科技有限公司
+                        <br />
+                        京ICP备1404****号-1 京ICP证14****号
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- footerend -->
+	</body>
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>首页-开店ing detail01</title>
+    <link href="Content/style.css" rel="stylesheet"/>
+    <link href="Content/siteweb.css" rel="stylesheet"/>
+
+    <link href="Content/shenqing.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="Content/album.css" media="all"/>
+
+
+    <!-- 引入js-->
+    <script src="Scripts/jquery-1.7.1.js" type="text/javascript"></script>
+    <!-- 引入js-->
+
+    <!--搜索下拉框-->
+    <script src="Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="Scripts/common_new.js" type="text/javascript"></script>
+    <script src="Scripts/details.js" type="text/javascript"></script>
+    <!--搜索下拉框-->
+    <!-- 相册-->
+    <script type="text/javascript" src="Scripts/jquery.album.js"></script>
+    
+    <!--// 相册-->
+</head>
+<body>
+<!--顶部开始-->
+<div class="header_titlebox">
+    <div class="body-warp header_infobox">
+        <img src="Images/index_201_03.jpg" style="margin-top: -3px;">&nbsp;&nbsp;&nbsp;&nbsp;会员登陆&nbsp;|&nbsp;注册 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="Images/index_201_05.jpg" style="margin-top: -7px;">&nbsp;&nbsp;&nbsp;&nbsp;开店帮商家登陆&nbsp;|&nbsp;注册
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        热线电话：400-166-5218
+    </div>
+</div>
+<div class="body-warp" style="height: 140px;">
+    <a href="/"><img src="Images/icon/logo_03.png" style="width: 240px;margin-top: 30px;"></a>
+    <img src="Images/index_201_10.jpg" style="margin: 40px 0px 0px 20px;">
+    <!--<div class="header_searchbox">
+            <button>搜索</button>
+            <input type="" name="" id="" value="项目名称/区域/商圈"  />
+            <select>
+                <option>项目</option>
+                <option>商铺</option>
+            </select>
+
+
+    </div>-->
+    <div class="header_search">
+        <div class="header_select" style="z-index:100;">
+            <a href="javascript:void(0)" class="header_select_sort">
+												<span>
+                                                        <em>项目</em>
+                                                        <b>&nabla;</b>
+                                                    </span>
+            </a>
+            <ul>
+                <li><a href="javascript:void(0)">项目</a></li>
+                <li><a href="javascript:void(0)">商铺</a></li>
+
+            </ul>
+        </div>
+        <input type="text" class="header_search_input" name="keyword" value="项目名称/区域/商圈">
+        <!--<em class="header_search_input_text" v="58" style="right: 58px;">项目名称/区域/商圈</em>-->
+        <input type="submit" class="header_search_submit" value="搜 索" searchtage="1_8_3_1">
+    </div>
+    <div class="clear"></div>
+</div>
+<div class="body-warp">
+    <div class="header_menubox">
+        <ul class="ul_headermenu">
+            <li>首页</li>
+            <li>寻址</li>
+            <li>开店帮</li>
+            <li>品牌街</li>
+            <li>采买商城</li>
+        </ul>
+
+    </div>
+    <div class="header_renwubox">
+        <img src="Images/anniu_03.jpg" alt="发布任务"/>
+    </div>
+</div>
+
+<div class="clear"></div>
+<!--顶部结束-->
+
+<!--正文开始-->
+<!--开店好礼，去看看开始-->
+<div class="warp warp-d1">
+    <div class="body-warp">
+        <a href="/"><img src="Images/del_ban.jpg" alt="开店送好礼banner图"></a>
+    </div>
+</div>
+<!--开店好礼，去看看结束-->
+
+<!--文创园图文简介1开始-->
+<!--灯箱幻灯片开始-->
+<div id="dengxiang"></div>
+
+<!--相册-->
+<div id="dx_slide">
+    <div class="album-box" id="album">
+        <div h class="pre-btn" id="preBtn" title="上一张 "><i></i></div>
+        <div class="next-btn" id="nextBtn" title="下一张 "><i></i></div>
+        <div class="album-con">
+            <div class="valin">
+                <span></span>
+                <img src="images/album-big/1.JPG" id="realImg"/>
+                <p class="pic-alt" id="txtDes"></p>
+            </div>
+            <div id="imgLoading"></div>
+        </div>
+        <div h class="thum-box" id="thumBox">
+            <div class="thum-wrap" id="thumWrap">
+                <ul class="imglist fix" id="photoList"></ul>
+            </div>
+            <i class="thum-pre-btn" id="thumPreBtn" title="上一页"></i>
+            <i class="thum-next-btn" id="thumNextBtn" title="下一页"></i>
+        </div>
+    </div>
+    <textarea class="dn" id="albumDataList">
+        <li>
+            <div><img src="images/album-tiny/1.jpg" onload="scaleImage(this,99,75)"></div>
+            <p>rrrrr</p>
+            <i class="dn">images/album-big/1.jpg</i>
+        </li>
+        <li>
+            <div><img src="images/album-tiny/2.jpg" onload="scaleImage(this,99,75)"></div>
+            <p>dddd</p>
+            <i class="dn">images/album-big/2.jpg</i>
+        </li>
+        <li>
+            <div><img src="images/album-tiny/3.jpg" onload="scaleImage(this,99,75)"></div>
+            <p>sss</p>
+            <i class="dn">images/album-big/3.jpg</i>
+        </li>
+        <li>
+            <div><img src="images/album-tiny/4.jpg" onload="scaleImage(this,99,75)"></div>
+            <p>hhhh</p>
+            <i class="dn">images/album-big/4.jpg</i>
+        </li>
+    </textarea>
+</div>
+
+<script type="text/javascript">
+    var _current_num = 0;//设置从第几张图片开始
+    $(window).load(function () {
+        var str_h = 0;
+        $("#album").find("div[h]").each(function (i, ele) {
+            str_h += $(ele).height();
+        });
+        $("#album").height(str_h);
+    });
+    function scaleImage(o, w, h) {
+        var img = new Image();
+        img.src = o.src;
+        if (img.width > 0 && img.height > 0) {
+            if (img.width / img.height >= w / h) {
+                if (img.width > w) {
+                    o.width = w;
+                    o.height = (img.height * w) / img.width;
+                } else {
+                    o.width = img.width;
+                    o.height = img.height;
+                }
+            } else {
+                if (img.height > h) {
+                    o.height = h;
+                    o.width = (img.width * h) / img.height;
+                } else {
+                    o.width = img.width;
+                    o.height = img.height;
+                }
+            }
+        }
+    }
+</script>
+<!--//相册-->
+<!--相册1-->
+
+<!--灯箱幻灯片结束-->
+<div class="body-warp warp_1">
+    <!--左边图片-->
+    <div class="del-l">
+        <div class="del-s" id="del_img">
+            <img class="img-1" src="Images/del_1.jpg" alt="文创园形象图">
+
+        </div>
+        <ul class="del-x">
+            <li id="del_img1" >
+                <img src="Images/del_001.jpg">
+
+                <p class="Write14">效果图</p>
+            </li>
+            <li id="del_img2">
+                <img src="Images/del_002.jpg">
+
+                <p class="Write14">交通图</p>
+            </li>
+            <li id="del_img3">
+                <img src="Images/del_003.jpg">
+
+                <p class="Write14">实景图</p>
+            </li>
+            <li id="del_img4">
+                <img src="Images/del_004.jpg">
+
+                <p class="Write14">外景图</p>
+            </li>
+        </ul>
+
+    </div>
+    <!--右边简介-->
+    <div class="del-r">
+        <h1 class="grayh1">北京电影学院创意园</h1>
+
+        <div><span class="Black16">地址</span>北京市朝阳区平房乡平房村东五环辅路</div>
+        <img src="Images/del_t.jpg" alt="周边服务">
+
+        <p class="red"><span class="Black16">出租</span>20.0元/天/平米</p>
+
+        <p class="red"><span class="Black16">电话</span>11111111111</p>
+
+        <div class="space"><span class="Black16">面积</span>建筑面积：12200 平米 <b>标准层面积：2200 平米</b></div>
+        <div class="tuangou">
+            <span class="Black16">团购</span>
+
+            <div>
+                <p id="divdown1">
+                    距离结束&nbsp;&nbsp;&nbsp;&nbsp;<b>10</b><strong>天</strong><b>10</b><strong>小时</strong><b >10</b><strong>分</strong><b >10</b><strong>秒</strong>
+                </p>
+
+                <p>
+                    可售251套&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;参与人数2561人
+                    <a class="shenqing" href="javascript:void(0)">立即申请</a>
+                </p>
+
+
+            </div>
+
+        </div>
+        <!-- <div class="youdian"><strong class="wukong Black16">项目亮点</strong>
+         <p>融情于景的4—8层托斯卡纳原乡建筑，1.5低容积率，105～140㎡全尺度墅质生活空间，高得房率，
+             为财智新贵量身定制，轻松私藏一生，轻享奢尚。</p></div>   -->
+
+    </div>
+
+
+    <!-- 申请报名弹出框 -->
+    <div class="del_baoming">
+       <div class="del_baoming_top" >
+           <span>申请报名</span>
+           <strong class="guanbi"></strong>
+       </div>
+       <ul>
+           <li class="dei_biaoming_bt">项目<span >北京文化创意园</span></li>
+           <li>姓名<input class="del_name1" type="text" value=""></li>
+           <li>手机<input class="del_name1" type="text" value=""></li>
+           <li>类型 
+            
+            <strong><input type="radio" name="Property" value="0" />个人</strong>
+             
+             <strong><input type="radio"  name="Property"  value="1" />公司</strong></li>
+
+       </ul>
+       <a href="/">立即申请</a> 
+       <b>已报名</b> 
+
+    </div>
+
+    <!-- /申请报名弹出框 -->
+</div>
+<!--文创园图文简介1结束-->
+
+
+<!--项目流程介绍开始-->
+<ul class="body-warp warp_2">
+    <li id="li_1">项目介绍</li>
+    <li id="li_2">项目亮点</li>
+    <li id="li_3">基本信息</li>
+    <li id="li_4">房源介绍</li>
+    <li id="li_5">沙盘图</li>
+    <li id="li_6">户型图</li>
+    <li id="li_7">项目图片</li>
+    <li id="li_8">服务团队</li>
+    <li id="li_9">位置</li>
+    <li id="li_10">流程图</li>
+</ul>
+<div class="body-warp warp-box" id="xiangmu_js">1111111</div>
+<div class="body-warp warp-box" id="xiangmu_ld">22222222</div>
+<div class="body-warp warp-box" id="xiangmu_xx">33333333</div>
+<div class="body-warp warp-box" id="xiangmu_fy">44444444444</div>
+<div class="body-warp warp-box" id="xiangmu_sp">55555555555</div>
+<div class="body-warp warp-box" id="xiangmu_hx">666666666666666</div>
+<div class="body-warp warp-box" id="xiangmu_tu">777777777777777</div>
+<div class="body-warp warp-box" id="xiangmu_fw">
+    <h2>服务团队</h2>
+
+    <div class="f1">
+        <div class="f-r">
+            <img src="Images/icon/del_f1.png">
+
+            <p>马云</p>
+        </div>
+        <p>
+            设计师是对设计事物的人的一种泛称。通常是在某个特定的专门领域创造或提供创意的工作，从事艺术与商业结合在一起 的人。这些人通常是利用绘画或其他各种以视觉传达的方式来表现他们的工作或作品。分为建筑设计、艺术设计、平面设
+            计、展览设计、工业设计、服装设计、空间设计、广告设计、家居设计、玩具设计等领域。
+        </p>
+    </div>
+    <ul class="f2">
+        <li><img src="Images/icon/del_f1.png">
+
+            <p>马云</p></li>
+        <li><img src="Images/icon/del_f1.png">
+
+            <p>马云</p></li>
+        <li><img src="Images/icon/del_f1.png">
+
+            <p>马云</p></li>
+        <li><img src="Images/icon/del_f1.png">
+
+            <p>马云</p></li>
+        <li><img src="Images/icon/del_f1.png">
+
+            <p>马云</p></li>
+        <li><img src="Images/icon/del_f1.png">
+
+            <p>马云</p></li>
+
+    </ul>
+</div>
+<div class="body-warp warp-box" id="xiangmu_wz">99999999999999999</div>
+<div class="body-warp warp-box" id="xiangmu_lc">1010101011010101010010</div>
+
+
+
+<!--项目流程介绍结束-->
+
+<!-- 沙盘图 户型图开始 -->
+<div class="warp-3">
+    <div class="body-warp">
+        <!-- 左边沙盘图 -->
+        <div class="shanpan">
+            <div class="del-tit">沙盘图</div>
+            <img src="images/del_shapan.jpg">
+        </div>
+        <!-- 右边户型图 -->
+        <div class="huxing">
+            <div class="del-tit">户型图(4)</div>
+            <ul>
+                <li><img src="images/del_hu1.jpg"></li>
+                <li><img src="images/del_hu1.jpg"></li>
+                <li><img src="images/del_hu1.jpg"></li>
+                <li><img src="images/del_hu1.jpg"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 沙盘图 户型图结束 -->
+<!-- 项目图片开始 -->
+<div class="body-warp warp-4">
+    <div class="del-tit2">
+        <span>项目图片(24)</span>
+        <ul>
+            <li id="xmg1">户型图(5)</li>
+            <li id="xmg2">交通图(2)</li>
+            <li id="xmg3">外景图(3)</li>
+            <li id="xmg4">实景图(55)</li>
+            <li id="xmg5">效果图(7)</li>
+            <li id="xmg6">样板间(76)</li>
+            <li id="xmg7">项目现场(11)</li>
+            <li id="xmg8">配套图(8)</li>
+            <a href="/">更多 > </a>
+        </ul>
+
+    </div>
+    <ul class="xm-img" id="xm-img1">
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+    </ul>
+    <ul class="xm-img" id="xm-img2">
+        <li><img src="images/del_xm2.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+    </ul>
+    <ul class="xm-img" id="xm-img3">
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+    </ul>
+    <ul class="xm-img" id="xm-img4">
+        <li><img src="images/del_xm2.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+    </ul>
+    <ul class="xm-img" id="xm-img5">
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+    </ul>
+    <ul class="xm-img" id="xm-img6">
+        <li><img src="images/del_xm2.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+    </ul>
+    <ul class="xm-img" id="xm-img7">
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+    </ul>
+    <ul class="xm-img" id="xm-img8">
+        <li><img src="images/del_xm2.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+        <li><img src="images/del_xm1.jpg"></li>
+    </ul>
+</div>
+<!-- 项目图片结束 -->
+<!-- 地理位置开始-->
+<!--<div class="body-warp warp-5">
+    <div class="del-tit">位置</div>
+    <img src="images/del_map.jpg">
+</div>-->
+<!-- 地理位置结束-->
+<!-- 流程图开始 -->
+<div class="warp-6">
+    <div class="body-warp">
+        <div class="del-tit3">流程图</div>
+        <img src="images/del_lct.jpg">
+    </div>
+</div>
+<!-- 流程图结束 -->
+
+<!-- 合作单位开始   -->
+<div class="warp-7">
+    <div class="body-warp">
+        <div class="del-tit4">合作单位</div>
+        <div class="hezuo">
+            <ul class="hezuo-s">
+                <li>政府合作</li>
+                <li>政府合作</li>
+                <li>政府合作</li>
+                <li>政府合作</li>
+                <li>政府合作</li>
+            </ul>
+            <ul class="hezuo-x">
+                <li>全经联</li>
+                <li>有房网</li>
+                <li>北京写字楼租赁网</li>
+                <li>商业地产策划公司</li>
+                <li>烟台租房</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 合作单位结束  -->
+<!-- 底部开始 -->
+<div class="footer-1">
+
+    <div class="service">
+        <div class="inner">
+            <div class="info">
+                <ul>
+                    <li>
+                        <h3>开店服务</h3>
+                    </li>
+                    <li><a href="#/instruction">购买指南</a></li>
+                    <li><a href="#/payment">支付方式</a></li>
+                    <li><a href="#/delivery">送货政策</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>服务与支持</h3>
+                    </li>
+                    <li><a href="#/service">购买指南</a></li>
+                    <li><a href="#/storelist">支付方式</a></li>
+                    <li><a target="_blank" href="http://preorder.smartisan.com/#/mobile/code">优先购买通道</a></li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3>关于公司</h3>
+                    </li>
+                    <li><a href="#/about">公司简介</a></li>
+                    <li><a href="#/join">加入我们</a></li>
+                    <li><a href="#/contact">联系我们</a></li>
+                </ul>
+            </div>
+
+            <div class="doublebox">
+                <div class="doublebox_in">
+                    <img src="Images/s-android.jpg">
+
+                    <p>Android二维码</p>
+                </div>
+            </div>
+            <div class="online">
+                <p class="phone-title">客服电话</p>
+
+                <p class="tel"><a href="tel:4006190909">400-000-9999</a></p>
+
+                <p>周一至周日 9:00-18:0</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="copyright">
+        <div class="warp-line fn-clear">
+            <div class="copy-label">
+                <div class="copy-text">
+                    Copyright © 2015, KaiDian Co.., Ltd. All Rights Reserved. 北京开店帮科技有限公司
+                    <br>
+                    京ICP备1404****号-1 京ICP证14****号
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部结束 -->
+
+
+<!--正文结束-->
+
+</body>
+
+</html>

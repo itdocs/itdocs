@@ -1,0 +1,67 @@
+/*顶部logo部分*/
+
+h2, p{ margin: 0; padding: 0}
+
+.zhan_logo{ background: #000c3e; height: 466px; text-align: center;}
+.zhan_logo img{ width: 220px; height: 67px; margin-top:200px; }
+
+/*会员活动海报*/
+.zhan_zm{background: #2a3974;height: 793px; text-align: center; overflow: hidden; margin-bottom: 50px;}
+.zhuan_hb{ width: 520px; margin-top: 340px; line-height: 30px; color: #dec560; text-align: left;}
+.zhuan_hb p{  font-size: 14px; }
+.zhuan_hb span{ font-size: 12px; display: block;line-height: 26px;}
+
+.zhuan_1{ height: 460px; color: #fff;  background: #444; overflow: hidden; margin-bottom: 30px}
+.zhuan_1 div{ padding: 50px 40px 30px 30px; width: 270px; background: #b19319;   height: 400px; }
+.zhuan_1 .tit{ font-size: 22px; line-height: 50px;  }
+.zhuan_1 p{ font-size: 14px; line-height: 30px;}
+.zhuan_1 a{display: block; border: 1px solid #fff; border-radius: 5px; height: 33px; line-height: 33px;margin: 20px 0 0 60px; font-size: 12px; width: 150px; text-align: center;}
+.zhuan_1 a:link, .zhuan_1 a:visited{color: #fff;}
+
+.zhuan_2{height: 360px; overflow: hidden;margin-bottom: 30px}
+
+.zhuan_3{ background: #eee;  height: 458px; overflow: hidden; margin-bottom: 30px}
+.zhuan_3_r{ background: #3468a1; padding: 60px 30px 0 50px; width: 260px; height: 400px; float: right; margin-bottom: 30px; color: #fff;}
+.zhuan_3_r span{ font-size: 20px; display: block; line-height: 50px;}
+.zhuan_3_r p{ font-size: 14px; line-height: 30px;}
+
+
+/*商业模式*/
+
+.zhuan_4{ border: 3px solid #5b81a9; height: 298px; overflow: hidden;margin-bottom: 30px;}
+.zhuan_4_mian{ margin: 25px 30px 25px 160px;} 
+.zhuan_4_mian{ margin: 25px 30px 25px 160px; color: #5b81a9;} 
+.zhuan_4_mian li{ border: 1px solid #5b81a9; float: left; width: 200px; height: 212px; border-radius: 80px 0 80px 0; margin-left: 35px; padding: 30px 10px 0 10px; line-height: 27px;} 
+.zhuan_4_mian li p{line-height: 23px; padding-left: 10px; background: url(../Images/icon/zhuan_i1.png) no-repeat left 5px ;}
+.zhuan_4_mian li h2{font-size: 24px; line-height:60px; margin-left: 5px; }
+ 
+.zhuan_4_mian .zhuan_4_mian_li h2{ margin-left: 30px;}
+.zhuan_4_mian_li p{ font-size: 14px; line-height:30px ;margin-left: 30px; width: 110px; }
+
+/*商业模式*/
+
+
+/*加入会员优惠*/
+.zhuan_5{background: #882a36; height: 153px; margin-bottom: 30px; }
+.zhuan_5_m{ float: right; width: 628px; height: 105px; border: 1px dashed #dec54b;  font-size: 16px; line-height: 30px; color: #dec54b; border-radius: 10px; margin: 16px 82px 0 0; padding-top: 12px; }
+.zhuan_5_m p{ margin-left: 40px;}
+
+/*加入会员优惠*/
+
+/*图 6 立即报名*/
+
+.zhuan_6{ height: 190px; background: #a18904;}
+/*图 6 立即报名*/
+
+
+
+
+
+
+
+.zhuan_7{ background: #010c3e;}
+
+
+
+
+
