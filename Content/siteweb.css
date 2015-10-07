@@ -80,6 +80,7 @@ filter:alpha(opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5;}
 /* 首页搜素框开始 */
 
 .header_search{height:50px; border:1px solid #ccc; float:right; margin-top:40px; display:inline;  position:relative; width:625px; }
+.header_search{*margin-top: -50px;}
 .header_search em{ font-style:normal} 
 .narrow_980 .header_search{width:364px;}
 .header_search .header_select{position:relative; z-index:9999;  float:left}
